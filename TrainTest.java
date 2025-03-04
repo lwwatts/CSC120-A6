@@ -6,7 +6,13 @@ public class TrainTest {
     // Engine Tests
     @Test
     public void testEngineConstructor() {
-        fail();
+        FuelType expectedFuelType = FuelType.ELECTRIC;
+        double expectedCurrentFuel = 100.0;
+        double expectedMaxFuel = 200.0;
+        Engine testEngine = new Engine(expectedFuelType, expectedCurrentFuel, expectedMaxFuel);
+        assertEquals("Testing fuel type initialization", expectedFuelType, testEngine.getFuelType());
+        assertEquals("Testing current fuel level initialization", expectedCurrentFuel, testEngine.getCurrentFuel(), 0.0);
+        assertEquals("Testing max fuel level initialization", expectedMaxFuel, testEngine.getMaxFuel(), 0.0);
     }
 
     @Test
