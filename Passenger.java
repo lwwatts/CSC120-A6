@@ -3,6 +3,7 @@
 public class Passenger{
     
     private String name;
+    private boolean boarded;
 
     /**
      * Constructor
@@ -10,6 +11,7 @@ public class Passenger{
      */
     public Passenger(String name) {
         this.name = name;
+        boarded = false;
     }
 
     /**
@@ -17,12 +19,13 @@ public class Passenger{
      * @param c the car which the passenger is to be added to
      */
     public void boardCar(Car c){
-        Boolean boarded = c.addPassenger(this);
-        if(!boarded){
+        Boolean hasBoarded = c.addPassenger(this);
+        if(!hasBoarded){
             System.out.println("Error: Passenger " + this.name + " cannot board this car because this car is full.");
         }
         else{
             System.out.println("Passenger " + this.name + " has boarded the car.");
+            this.boarded = true;
         }
     }
 
@@ -37,6 +40,7 @@ public class Passenger{
         }
         else{
             System.out.println("Passenger " + this.name + " has gotten off the car.");
+            this.boarded = false;
         }
     }
 
@@ -46,6 +50,14 @@ public class Passenger{
      */
     public String toString(){
         return this.name;
+    }
+
+    /**
+     * Gets the passenger's boarding status
+     * @return T/F: whether or not the passenger has boarded
+     */
+    public boolean getBoarded(){
+        return this.boarded;
     }
 
     public static void main(String[] args) {
