@@ -3,7 +3,6 @@
 public class Passenger{
     
     private String name;
-    private boolean boarded;
 
     /**
      * Constructor
@@ -11,7 +10,6 @@ public class Passenger{
      */
     public Passenger(String name) {
         this.name = name;
-        boarded = false;
     }
 
     /**
@@ -25,7 +23,6 @@ public class Passenger{
         }
         else{
             System.out.println("Passenger " + this.name + " has boarded the car.");
-            this.boarded = true;
         }
     }
 
@@ -40,7 +37,6 @@ public class Passenger{
         }
         else{
             System.out.println("Passenger " + this.name + " has gotten off the car.");
-            this.boarded = false;
         }
     }
 
@@ -50,14 +46,6 @@ public class Passenger{
      */
     public String toString(){
         return this.name;
-    }
-
-    /**
-     * Gets the passenger's boarding status
-     * @return T/F: whether or not the passenger has boarded
-     */
-    public boolean getBoarded(){
-        return this.boarded;
     }
 
     public static void main(String[] args) {
