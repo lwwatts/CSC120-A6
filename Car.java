@@ -79,6 +79,14 @@ public class Car{
         }
     }
 
+    /**
+     * Returns this car's manifest
+     * @return ArrayList: the list of passengers on board in this car
+     */
+    public ArrayList<Passenger> getPassengersOnBoard(){
+        return this.passengersOnBoard;
+    }
+
     public static void main(String[] args) {
         // Car c = new Car(10);
         // ArrayList<Passenger> roster = new ArrayList<>();
