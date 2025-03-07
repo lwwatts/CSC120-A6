@@ -39,6 +39,10 @@ public class Train{
         return this.cars.get(i);
     }
 
+    public ArrayList<Car> getCars(){
+        return this.cars;
+    }
+
     /**
      * Determines how many total passengers can be seated on this train
      * @return int: the max number of passengers this train can seat
