@@ -41,6 +41,7 @@ public class TrainTest {
         Passenger testPassenger1 = new Passenger("p1");
         Passenger testPassenger2 = new Passenger("p2");
         assertTrue(testCar.addPassenger(testPassenger1));
+        assertTrue(testCar.getPassengersOnBoard().contains(testPassenger1));
         assertFalse(testCar.addPassenger(testPassenger2));
     }
 
