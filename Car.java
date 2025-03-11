@@ -80,8 +80,8 @@ public class Car{
     }
 
     /**
-     * Returns this car's manifest
-     * @return ArrayList: the list of passengers on board in this car
+     * Checks whether or not a passenger is on this car
+     * @return T/F: whether or not the passenger is in the car's passenger list
      */
     public boolean boarded(Passenger p){
         return this.passengersOnBoard.contains(p);
