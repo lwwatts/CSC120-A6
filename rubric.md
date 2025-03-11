@@ -10,18 +10,18 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ## Assignment Points:
 
-_____ 10 pts: The class meaningfully implements each of the tests in described in the `TrainTest.java`:
+**YES** 10 pts: The class meaningfully implements each of the tests in described in the `TrainTest.java`:
 
-      _____ `testEngineConstructor()`
-      _____ `testEngineGo()`
-      _____ `testCarAddPassenger()`
-      _____ `testCarRemovePassenger()`
-      _____ `testPassengerBoardCarWithSpace()`
-      _____ `testPassengerBoardCarFull()`
-      _____ `testTrainConstructor()`
-      _____ `testTrainPassengerCount()`
-      _____ `testTrainGetCar()`
-      _____ `testTrainPrintManifest()`
+      **YES** `testEngineConstructor()`
+      **YES** `testEngineGo()`
+      **YES** `testCarAddPassenger()`
+      **YES** `testCarRemovePassenger()`
+      **YES** `testPassengerBoardCarWithSpace()`
+      **YES** `testPassengerBoardCarFull()`
+      **YES** `testTrainConstructor()`
+      **YES** `testTrainPassengerCount()`
+      **YES** `testTrainGetCar()`
+      **YES** `testTrainPrintManifest()`
 
 ## General Items:
 
